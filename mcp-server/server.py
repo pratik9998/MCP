@@ -44,6 +44,6 @@ if __name__ == "__main__":
     print("Starting MCP server...")
     print("Server name:", mcp.name)
     # Run the MCP server to make it available to client (like cursor ai or claude desktop)
-    # mcp.run(transport='stdio')
-    print(asyncio.run(get_healthcheck()))
+    mcp.run(transport='stdio')
+    # print(asyncio.run(get_healthcheck()))
 
